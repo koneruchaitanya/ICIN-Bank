@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Login</title>
+        <style>
+        body{
+        background-image: url("/images/back.jpg");
+        background-size:cover;
+        
+        }
+        
+        .container{
+color:black;
+background-color: coral;
+width: 30%;
+height: 70%;
+margin: 60px 40px;
+padding: 30px 30px;
+}
+        
+        </style>
+        
+    </head>
+    <body >
+     <div class="container">
+   
+    
+        <form method="post">
+        
+            <table align="center">
+             <div class="alert alert-warning" role="alert" th:if="${errorMessage}">
+             <center><font color="red">Invalid Entry!!!</center>
+             </div>  
+            <h1  align="center"><font color="white"> Admin Portal</font></h1>
+                
+                <tr><td> <h3><font color="white"> Admin Name  :</font></h3> </td><td> <input type="text" name="name"></td></tr>
+                <tr><td><h3><font color="white">  Password    :</font></h3> </td><td> <input type="password" name="password"></td></tr>
+                <tr><td colspan="2"> <button type="submit"><center>Login</center></button></td></tr>
+            </table>
+            </body>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+</html>  
